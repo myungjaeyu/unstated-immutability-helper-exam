@@ -16,6 +16,10 @@ class App extends Component {
 
                         <button onClick={ _ => app.addTick() }>Add</button>
 
+                        <p> { app.state.board.content.title } </p>
+
+                        <button onClick={ _ => app.setTitle('updated title') }>setTtile</button>
+
                     </div>)
                 }
             }
